@@ -8,7 +8,7 @@ import numpy as np
 from glob import glob
 import utils.frame_utils as frame_utils
 
-from scipy.misc import imread, imresize
+from imageio import imread
 
 class StaticRandomCrop(object):
     def __init__(self, image_size, crop_size):
@@ -368,7 +368,7 @@ class ImagesFromFolder(data.Dataset):
 import argparse
 import sys, os
 import importlib
-from scipy.misc import imsave
+from imageio import imsave
 import numpy as np
 
 import datasets
